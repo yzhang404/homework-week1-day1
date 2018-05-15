@@ -7,6 +7,7 @@ const handleSubmit = function(ev){
     const f = ev.target
     const userName=f.userName.value // target is the form today
     users.textContent += " " + userName
+    f.userName.value = ''
 }
 
 form.addEventListener('submit',handleSubmit)
