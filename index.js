@@ -3,10 +3,10 @@ const form = document.querySelector('#userForm')
 
 const handleSubmit = function(ev){
     ev.preventDefault()
-    const heading =document.querySelector('h1#greeting')
+    const users =document.querySelector('#users')
     const f = ev.target
-    const userName=f.value // target is the form today
-    heading.textContent= userName
+    const userName=f.userName.value // target is the form today
+    users.textContent += " " + userName
 }
 
 form.addEventListener('submit',handleSubmit)
