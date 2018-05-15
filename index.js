@@ -1,7 +1,8 @@
 const button = document.querySelector('button')
-const h1 = document.querySelector('#wonder')
 
 function changeHeading(){
-    h1.textContent = 'It is me'
+    const header = document.querySelector('h1#wonder')
+    header.textContent = document.getElementById("text").value
 }
+
 button.addEventListener('click',changeHeading)
