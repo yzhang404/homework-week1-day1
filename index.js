@@ -13,7 +13,7 @@ const handleSubmit = function(ev) {
 
 
   const favoriteColor = f.favoritecolor.value
-  p.style.color = favoriteColor
+  p.style.backgroundColor = favoriteColor
 
   f.reset()
   f.name.focus()
